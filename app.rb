@@ -1,3 +1,4 @@
+require 'pry'
 require 'sinatra/base'
 
 class App < Sinatra::Base
@@ -14,7 +15,7 @@ class App < Sinatra::Base
     @pf = params["pf"]
     @sf = params["sf"]
     @c = params["c"]
-
+    binding.pry
     erb :team
   end
 end
